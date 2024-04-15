@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="nasa_api_key">w7kMU1obTlqIHRp84CrHXxXxf0NaLYzqiTzNsB5b</string>
+    <string name="get_photo">Get photo</string>
+    <string name="name">Kozma Alexandra Petrovna</string>
+    <string name="app">Hi! It is an app to view the astronomy photo of the day from NASA</string>
+    <string name="photo">Great photo</string>
+    <string name="back">Go back</string>
+    <string name="rate">Rate this app</string>
+    <string name="email">E-mail</string>
+    <string name="suggest">Type suggestions</string>
+    <string name="submit">Submit</string>
+</resources>
