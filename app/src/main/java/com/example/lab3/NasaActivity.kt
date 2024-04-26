@@ -1,8 +1,12 @@
 package com.example.lab3
 
 import android.content.Intent
+import android.opengl.Matrix
 import android.os.Bundle
 import android.util.Log
+import android.view.GestureDetector
+import android.view.MotionEvent
+import android.view.ScaleGestureDetector
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -18,6 +22,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
+import kotlin.math.max
+import kotlin.math.min
 
 interface NasaApiService {
     @GET("planetary/apod")
@@ -33,7 +39,6 @@ class NasaActivity : AppCompatActivity() {
     private val NASA_API_KEY = "w7kMU1obTlqIHRp84CrHXxXxf0NaLYzqiTzNsB5b";
     private lateinit var imageView: ImageView
     private lateinit var titleTextView: TextView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
