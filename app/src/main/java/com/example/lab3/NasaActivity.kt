@@ -30,7 +30,7 @@ interface NasaApiService {
     fun getAstronomyPictureOfTheDay(@Query("api_key") apiKey: String): Call<NasaResponse>
 }
 
-data class NasaResponse(val url: String, val title: String)
+data class NasaResponse(val url: String, val title: String, val explanation: String)
 
 
 class NasaActivity : AppCompatActivity() {
